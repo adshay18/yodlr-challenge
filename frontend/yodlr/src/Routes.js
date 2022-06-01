@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
 
 const Routes = () => {
 	return (
@@ -6,7 +7,7 @@ const Routes = () => {
 			<main>
 				<Switch>
 					<Route exact path="/">
-						Home page
+						<Home />
 					</Route>
 					<Route exact path="/admin">
 						Admin Page
