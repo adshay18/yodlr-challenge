@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import UserContext from './context/UserContext';
+import Routes from './Routes';
 
 function App() {
 	const [ currUser, setCurrUser ] = useState({});
