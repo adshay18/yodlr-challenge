@@ -1,11 +1,8 @@
-import React, { useContext } from 'react';
-import { Card, CardBody, CardTitle, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import UserContext from '../context/UserContext';
+import React from 'react';
+import { Card, CardBody, CardTitle } from 'reactstrap';
 import '../css/Home.css';
 
 const Home = () => {
-	const { users } = useContext(UserContext);
 	return (
 		<section className="col-md-8">
 			<Card>
