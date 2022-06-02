@@ -12,7 +12,7 @@ const NavBar = () => {
 				</NavLink>
 				<Nav className="ml-auto" navbar>
 					<NavItem>
-						<NavLink to="/admin">User List</NavLink>
+						<NavLink to="/users">User List</NavLink>
 					</NavItem>
 					<NavItem>
 						<NavLink to="/register">Register</NavLink>
