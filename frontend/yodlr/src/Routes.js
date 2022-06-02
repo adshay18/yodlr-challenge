@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
+import NavBar from './components/NavBar';
 
 const Routes = () => {
 	return (
 		<Router>
+			<NavBar />
 			<main>
 				<Switch>
 					<Route exact path="/">
