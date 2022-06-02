@@ -1,0 +1,13 @@
+.card-title {
+	color: #91bdff;
+	font-size: 3rem;
+}
+
+.card {
+	background-color: whitesmoke;
+	border: none;
+}
+
+.card span {
+	font-size: 1.5rem;
+}
