@@ -11,7 +11,7 @@ const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:3001';
 class Api {
 	static async request(endpoint, data = {}, method = 'get') {
 		// remove this for production
-		console.debug('API Call made:', `${BASE_URL}/${endpoint}`, data, method);
+		// console.debug('API Call made:', `${BASE_URL}/${endpoint}`, data, method);
 
 		const url = `${BASE_URL}/${endpoint}`;
 		const params = method === 'get' ? data : {};
