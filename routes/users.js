@@ -8,12 +8,8 @@ var users = require('../init_data.json').data;
 var curId = _.size(users);
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-	try {
-		return res.json({ users: users });
-	} catch (e) {
-		return next(e);
-	}
+router.get('/', function(req, res) {
+	res.json(_.toArray(users));
 });
 
 /* Create a new user */
