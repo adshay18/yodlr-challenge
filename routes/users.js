@@ -16,6 +16,7 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
 	var user = req.body;
 	user.id = curId + 1;
+	curId += 1;
 	if (!user.state) {
 		user.state = 'pending';
 	}
