@@ -3,6 +3,7 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import RegisterForm from './components/RegisterForm';
 import UserList from './components/UserList';
+import UserPage from './components/UserPage';
 
 const Routes = () => {
 	return (
@@ -17,7 +18,7 @@ const Routes = () => {
 						<UserList />
 					</Route>
 					<Route path="/users/:id">
-						<p>User details page</p>
+						<UserPage />
 					</Route>
 					<Route exact path="/register">
 						<RegisterForm />
