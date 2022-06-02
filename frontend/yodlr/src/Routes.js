@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
+import UserList from './components/UserList';
 
 const Routes = () => {
 	return (
@@ -12,7 +13,7 @@ const Routes = () => {
 						<Home />
 					</Route>
 					<Route exact path="/admin">
-						Admin Page
+						<UserList />
 					</Route>
 					<Route exact path="/register">
 						Register page

@@ -1,0 +1,26 @@
+.UserTitle {
+	font-size: 1.5rem;
+	color: #287eff;
+	padding: 5px 0 0 10px;
+}
+
+.card a {
+	display: inline;
+	text-decoration: none;
+	padding: 0 0 5px 10px;
+	color: #287eff;
+}
+
+.card a:hover {
+	color: #1d5bb9;
+	text-decoration: 2px underline solid;
+}
+
+.UserCard {
+	margin-top: 12px;
+	background-color: rgba(210, 210, 210, 0.5);
+}
+
+.UserCard:hover {
+	background-color: rgb(211, 211, 211);
+}
