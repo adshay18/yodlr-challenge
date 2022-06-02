@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
+import RegisterForm from './components/RegisterForm';
 import UserList from './components/UserList';
 
 const Routes = () => {
@@ -15,8 +16,14 @@ const Routes = () => {
 					<Route exact path="/users">
 						<UserList />
 					</Route>
+					<Route path="/users/:id">
+						<p>User details page</p>
+					</Route>
 					<Route exact path="/register">
-						Register page
+						<RegisterForm />
+					</Route>
+					<Route>
+						<p>404 page not found</p>
 					</Route>
 				</Switch>
 			</main>

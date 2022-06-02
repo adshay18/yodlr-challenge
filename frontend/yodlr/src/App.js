@@ -9,6 +9,7 @@ const App = () => {
 
 	const register = async (userData) => {
 		let res = await Api.addUser(userData);
+		setUsers([ ...users, res ]);
 		return res;
 	};
 
