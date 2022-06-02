@@ -57,6 +57,18 @@ Once the server is running, you can access the start page (index.html) by openin
 
 To stop the server, press CTRL-C.
 
+To start the frontend component, access the [frontend/yodlr directory](https://github.com/adshay18/yodlr-challenge/tree/master/frontend/yodlr) and follow the instructions listed in the ReadMe.
+
+Otherwise, once in that directory follow these prompts:
+```
+npm install
+```
+Once the dependencies have all been installed, run:
+```
+npm start
+```
+This should automatically open your browser to [http://localhost:3000](http://localhost:3000) where the react app should be running.
+
 ## REST API
 
 The Users JSON REST API is exposed at [http://localhost:3001/users](http://localhost:3001).
