@@ -15,7 +15,7 @@ const App = () => {
 	useEffect(() => {
 		async function getUserList() {
 			let res = await Api.getUsers();
-			console.log(res);
+			setUsers(res);
 		}
 		getUserList();
 	}, []);
