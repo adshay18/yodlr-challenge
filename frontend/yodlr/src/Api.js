@@ -11,13 +11,14 @@ const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:3001';
 class Api {
 	static async request(endpoint, data = {}, method = 'get') {
 		// remove this for production
-		console.debug('API Call made:', endpoint, data, method);
+		console.debug('API Call made:', `${BASE_URL}/${endpoint}`, data, method);
 
 		const url = `${BASE_URL}/${endpoint}`;
 		const params = method === 'get' ? data : {};
 
 		try {
-			return await axios({ url, method, data, params }).data;
+			let res = await axios({ url, method, data, params });
+			return res.data;
 		} catch (e) {
 			console.error('API Error:', e.response);
 			throw e;
@@ -31,6 +32,7 @@ class Api {
 	// Get list of users
 	static async getUsers() {
 		let res = await this.request(`users`);
+		// console.log(res);
 		return res;
 	}
 
