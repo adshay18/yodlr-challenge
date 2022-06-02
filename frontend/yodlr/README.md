@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+BEFORE RUNNING ANY SCRIPTS MAKE SURE TO HAVE THE PROVIDED SERVER RUNNING.  Follow the instructions on the main ReadMe file, or run `npm start` in the top level directory before running the scripts below.
+
 In the project directory, you can run:
 
 ### `npm start`
